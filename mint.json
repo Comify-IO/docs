@@ -1,51 +1,34 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Comify",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "https://ik.imagekit.io/flaberry/comify_logo_XHaYdWkw-.png?updatedAt=1730834189440",
+    "light": "https://ik.imagekit.io/flaberry/comify_logo_XHaYdWkw-.png?updatedAt=1730834189440"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#FEB400",
+    "light": "#FEB400",
+    "dark": "#FEB400",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#FEB400",
+      "to": "#FEB400"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@comify.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.comify.io"
   },
   "tabs": [
     {
       "name": "API Reference",
       "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
@@ -58,34 +41,26 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Comify One",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "pubsub/overview"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "PubSubClient",
       "pages": [
-        "api-reference/introduction"
+        "pubsub/overview"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Whatsapp Chat Client",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "pubsub/overview"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "instagram": "https://www.instagram.com/comifyoffical",
+    "linkedin": "https://www.linkedin.com/company/comifyofficial"
   }
 }
