@@ -33,28 +33,72 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Getting Started",
       "pages": [
         "introduction",
         "quickstart"
       ]
     },
     {
-      "group": "Communication",
+      "group": "Channels",
       "pages": [
-        "pubsub/overview"
-      ]
-    },
-    {
-      "group": "PubSub",
-      "pages": [
-        "pubsub/overview"
-      ]
-    },
-    {
-      "group": "Messaging",
-      "pages": [
-        "pubsub/overview"
+        {
+          "group": "Email",
+          "pages": [
+            "channels/email/overview",
+            {
+              "group": "Providers",
+              "pages": [
+                "channels/email/providers/gmail",
+                "channels/email/providers/sendgrid",
+                "channels/email/providers/smtp",
+                "channels/email/providers/freshdesk"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Whatsapp",
+          "pages": [
+            "channels/whatsapp/overview",
+            {
+              "group": "Providers",
+              "pages": [
+                "channels/whatsapp/providers/meta",
+                "channels/whatsapp/providers/wati",
+                "channels/whatsapp/providers/aisensy"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "SMS",
+          "pages": [
+            "channels/sms/overview",
+            {
+              "group": "Providers",
+              "pages": [
+                "channels/sms/providers/twilio",
+                "channels/sms/providers/gupshup",
+                "channels/sms/providers/msg91"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Push",
+          "pages": [
+            "channels/push/overview",
+            {
+              "group": "Providers",
+              "pages": [
+                "channels/push/providers/fcm",
+                "channels/push/providers/onesignal",
+                "channels/push/providers/sns"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],

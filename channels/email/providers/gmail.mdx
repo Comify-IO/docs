@@ -1,0 +1,70 @@
+---
+title: Gmail
+description: "Learn how to send emails via Gmail using Comify."
+---
+
+You can use the Gmail provider to send transactional emails to your customers using the Comify Platform with a single API to create multi-channel experiences.
+
+## Getting Started
+To use the Gmail provider in the email channel, you will need to create a Gmail account, create an app password to the Gmail integration on the Comify platform.
+
+## Creating a Gmail app password
+To create a Gmail app password, follow these steps:
+
+1.  Go to [Google Account](https://accounts.google.com/), sign in with your Gmail account.
+2.  Navigate to **Security** > **Manage 2-step verification**.
+3.  Click **Add an app password**.
+4.  Select **Other** and enter a name for the password.
+5.  Click **Generate Password** and copy the password.
+6.  Paste the password into the Comify platform.
+
+## Using Comify Template Editor
+Comify has its own email editor for writing email template. To send pre-made template in Gmail, use custom payload to override the template details.
+
+<Tabs>
+      <Tab title="Node.js">
+        ```bash
+        const { Comify } = require('comify-node')
+
+        const comm = new Comify('COMIFY_API_KEY')
+
+        comm.triggerComm('email_template_name',{ 
+          "order_id" : "123455",
+          "billing" : {
+            "customerEmail" : "contact@comify.io",
+            "customerName" : "Comify"
+          }
+        }, 'email')
+        ```
+      </Tab>
+      <Tab title="Ruby">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Python">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Go">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="PHP">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Java">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Javascript">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+</Tabs>
