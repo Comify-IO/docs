@@ -36,24 +36,23 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
-      "group": "Comify One",
+      "group": "Communication",
       "pages": [
         "pubsub/overview"
       ]
     },
     {
-      "group": "PubSubClient",
+      "group": "PubSub",
       "pages": [
         "pubsub/overview"
       ]
     },
     {
-      "group": "Whatsapp Chat Client",
+      "group": "Messaging",
       "pages": [
         "pubsub/overview"
       ]
