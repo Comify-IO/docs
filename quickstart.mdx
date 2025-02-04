@@ -14,13 +14,48 @@ To integrate Comify into your application, you'll first need to create a Comify 
   </Step>
 
   <Step title="Add the SDK into your project">
-    Choose the product that best suits your use case and follow the SDK installation instructions:
+    Choose the sdk that best suits your use case and follow the SDK installation instructions:
 
-    - [Communication](/communication/overview)
-    - [PubSub](/pubsub/overview)
-    - [Messaging](/messaging/overview)
-
+    <Tabs>
+      <Tab title="Node.js">
+        ```bash
+        npm install comify-node
+        ```
+      </Tab>
+      <Tab title="Ruby">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Python">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Go">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="PHP">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Java">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Javascript">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+    </Tabs>
+    
   </Step>
+  
 
   <Step title="Configure API Keys">
     To access Comify, set the `COMIFY_API_KEY` in your environment variables. You can find your API key in the developer section of your Comify dashboard.
@@ -40,6 +75,79 @@ To integrate Comify into your application, you'll first need to create a Comify 
     - [Email](/service-provider/email)
     - [SMS](/service-provider/sms)
     - [Push](/service-provider/push)
+    - [Chat](/service-provider/chat)
+  </Step>
+
+  <Step title="Add Your Templates">
+    In order to send communications, you’ll need to add standart templates for each service provider. Follow the instructions for your service provider of choice
+
+    - [Whatsapp Template](/service-provider/whatsapp)
+    - [Email Template](/service-provider/email)
+    - [SMS Template](/service-provider/sms)
+    - [Push Template](/service-provider/push)
+    - [Chat Template](/service-provider/chat)
+  </Step>
+
+  <Step title="Send your first communication">
+    Choose the sdk that best suits your use case and follow the SDK installation instructions:
+
+    <Tabs>
+      <Tab title="Node.js">
+        ```bash
+        const { Comify } = require('comify-node')
+
+        const comm = new Comify('COMIFY_API_KEY')
+
+        comm.triggerComm('template_name',{ 
+          "order_id" : "123455",
+          "billing" : {
+            "customerEmail" : "contact@comify.io",
+            "customerName" : "Comify"
+          }
+        }, 'email')
+        ```
+      </Tab>
+      <Tab title="Ruby">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Python">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Go">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="PHP">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Java">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+      <Tab title="Javascript">
+        ```bash
+        coming soon
+        ```
+      </Tab>
+    </Tabs>
+    
+  </Step>
+
+  <Step title="Join the Comify Community">
+    In case you have any questions or feedback, you can contact us on support@comify.io or join our community of developers and users on [Discord](https://discord.gg/E42mSUcm).
   </Step>
 
 </Steps>
+
+
+Now that you triggered your first communication, learn more about the advanced features and concepts of Comify.
+
+
